@@ -11,15 +11,15 @@ const works = ['/images/obra-1.jpg', '/images/obra-2.jpg', '/images/obra-3.jpg']
 
 <!-- Hero -->
 <section class="px-margin-mobile lg:px-margin-desktop mb-40" id="work">
-  <div class="grid grid-cols-12 gap-gutter items-end">
-    <div class="col-span-12 lg:col-span-8 overflow-hidden group">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
+    <div class="lg:col-span-8 overflow-hidden group">
       <img
         src="/images/hero.webp"
         alt={t.home.heroAlt}
         class="w-full h-auto object-cover transform transition-transform duration-1000 group-hover:scale-105"
       />
     </div>
-    <div class="col-span-12 lg:col-span-4 pb-12 reveal-up">
+    <div class="lg:col-span-4 pb-12 reveal-up">
       <h1 class="font-headline text-headline-xl mb-8 leading-none uppercase">
         {t.home.heroTitle}
       </h1>
@@ -52,10 +52,10 @@ const works = ['/images/obra-1.jpg', '/images/obra-2.jpg', '/images/obra-3.jpg']
 
 <!-- Obras seleccionadas -->
 <section class="px-margin-mobile lg:px-margin-desktop mb-40 reveal-up" id="selected">
-  <div class="grid grid-cols-12 gap-gutter">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
     {
       t.home.works.map((name, i) => (
-        <div class="col-span-12 lg:col-span-4 group">
+        <div class="lg:col-span-4 group">
           <div class="overflow-hidden mb-6 bg-gallery-grey dark:bg-iron-grey aspect-square">
             <img
               src={works[i]}
