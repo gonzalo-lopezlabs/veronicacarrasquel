@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import Home from '../../components/Home.astro';
+import { en } from '../../i18n/en';
+---
+
+<Base
+  t={en}
+  title={en.meta.homeTitle}
+  description={en.meta.homeDescription}
+  altUrl="/es/"
+  active="work"
+>
+  <Home t={en} />
+</Base>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ABOUT | VERÓNICA CARRASQUEL</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e2e2e2",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#5e5e5e",
+                    "primary-fixed": "#e2e2e2",
+                    "surface-container-highest": "#e2e2e2",
+                    "primary": "#000000",
+                    "on-surface-variant": "#4c4546",
+                    "on-surface": "#1a1c1c",
+                    "on-primary-fixed-variant": "#474747",
+                    "secondary-fixed-dim": "#c7c6c6",
+                    "surface": "#f9f9f9",
+                    "surface-container": "#eeeeee",
+                    "surface-bright": "#f9f9f9",
+                    "tertiary": "#000000",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "graphite": "#333333",
+                    "on-primary-container": "#848484",
+                    "secondary-container": "#e3e2e2",
+                    "inverse-on-surface": "#f0f1f1",
+                    "tertiary-fixed": "#e2e2e2",
+                    "void-black": "#000000",
+                    "paper-white": "#FFFFFF",
+                    "secondary": "#5e5e5e",
+                    "secondary-fixed": "#e3e2e2",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#646464",
+                    "surface-dim": "#dadada",
+                    "on-error": "#ffffff",
+                    "background": "#f9f9f9",
+                    "primary-container": "#1b1b1b",
+                    "inverse-surface": "#2f3131",
+                    "on-primary-fixed": "#1b1b1b",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "surface-container-high": "#e8e8e8",
+                    "on-secondary-fixed-variant": "#464747",
+                    "on-tertiary-fixed": "#1b1b1b",
+                    "inverse-primary": "#c6c6c6",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#1a1c1c",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f3f3f4",
+                    "surface-container-lowest": "#ffffff",
+                    "gallery-grey": "#F1F1F1",
+                    "outline": "#7e7576",
+                    "tertiary-container": "#1b1b1b",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#cfc4c5",
+                    "on-tertiary-container": "#848484"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "32px",
+                    "unit": "8px",
+                    "grid-cols": "12",
+                    "margin-mobile": "24px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Hanken Grotesk"],
+                    "headline-xl": ["Hanken Grotesk"],
+                    "body-md": ["Inter"],
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "caption": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-mono": ["JetBrains Mono"]
+            },
+            "fontSize": {
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-xl": ["80px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "caption": ["13px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-mono": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #FFFFFF;
+            color: #000000;
+            overflow-x: hidden;
+        }
+        .reveal-text {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-text.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .image-zoom-container {
+            overflow: hidden;
+            border: 1px solid #000000;
+        }
+        .image-zoom-container img {
+            transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .image-zoom-container:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full bg-white dark:bg-black border-b border-void-black dark:border-paper-white z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop py-unit-4 max-w-full mx-auto">
+<a class="font-headline-md text-headline-md font-bold tracking-tighter text-void-black dark:text-paper-white uppercase" href="/">VERÓNICA CARRASQUEL</a>
+<nav class="hidden md:flex items-center space-x-12">
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:line-through transition-all duration-300" href="#">WORK</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-void-black dark:text-paper-white border-b-2 border-void-black dark:border-paper-white pb-1 transition-all duration-300" href="#">ABOUT</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:line-through transition-all duration-300" href="#">EXHIBITIONS</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:line-through transition-all duration-300" href="#">CONTACT</a>
+</nav>
+<button class="flex items-center justify-center p-2 hover:opacity-70 transition-opacity" data-icon="contrast">
+<span class="material-symbols-outlined">contrast</span>
+</button>
+</div>
+</header>
+<main class="pt-32 pb-32">
+<!-- Hero Section -->
+<section class="px-margin-desktop mb-32 md:mb-48">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
+<div class="md:col-span-8">
+<span class="font-label-mono text-label-mono uppercase tracking-[0.3em] mb-4 block reveal-text">The Narrative</span>
+<h1 class="font-headline-xl text-headline-xl mb-0 reveal-text">THE VOID AND THE FORM.</h1>
+</div>
+<div class="md:col-span-4 hidden md:block">
+<p class="font-label-mono text-label-mono uppercase border-t border-void-black pt-4">Profile: Artist &amp; Visionary</p>
+</div>
+</div>
+</section>
+<!-- Main Content -->
+<section class="px-margin-desktop mb-32 md:mb-64">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Left: Image Section -->
+<div class="md:col-span-6 mb-16 md:mb-0">
+<div class="image-zoom-container sticky top-40">
+<img alt="Verónica Carrasquel's Optical Art" class="w-full h-auto grayscale object-cover aspect-[1.49]" src="https://lh3.googleusercontent.com/aida/AP1WRLtg-YBlnEqCp8IwmLz1wFgCmMT8-AsInmMuL-zaqwYOJv2l-M6XpPMR24dfWcCu8zwz0Gvbj7t9_ttwzNJ68ZDpZpAlH0d5nGl8ImAdbCr-jjXujn6jlHnnq75t1aRR2qtzREcqnvD7eXBELZ7nZWUaUVt1KRsgtppM_3jid1T8vyu0sJcmKs0kfu_Oh8rqGKkATy7F2AUvJiJ6WswgzgW_ek-wSoNuBcsz2B89fldibqHFe_IQb5lWPIk"/>
+<div class="mt-4 flex justify-between items-start">
+<p class="font-label-mono text-label-mono text-graphite">STUDY OF DUALITY NO. 5</p>
+<p class="font-label-mono text-label-mono text-graphite">ACRYLIC ON CANVAS</p>
+</div>
+</div>
+</div>
+<!-- Right: Bio Content -->
+<div class="md:col-span-5 md:col-start-8">
+<div class="space-y-16">
+<div class="reveal-text">
+<h2 class="font-headline-lg text-headline-lg mb-8 uppercase">The Journey</h2>
+<p class="font-body-lg text-body-lg leading-relaxed text-graphite">
+                                Born in the vibrant heart of Caracas, Venezuela, Verónica Carrasquel's path to the canvas was not paved with traditional academic blueprints. She is a self-taught force, driven by an innate necessity to translate the kinetic energy of her surroundings into static, yet breathing, forms. 
+                            </p>
+<p class="font-body-lg text-body-lg leading-relaxed text-graphite mt-6">
+                                Her migration to Buenos Aires marked a pivotal shift in her visual language. The architectural geometry of the southern metropolis began to merge with her ancestral tropical rhythm, leading her to the precise world of optical art. It was here that her exploration of dualism found its definitive voice.
+                            </p>
+</div>
+<div class="reveal-text border-t border-void-black pt-12">
+<h2 class="font-headline-lg text-headline-lg mb-8 uppercase">Technique</h2>
+<p class="font-body-lg text-body-lg leading-relaxed text-graphite">
+                                For Carrasquel, acrylic on canvas is not just a medium, but a meticulous discipline. Her technique demands an almost surgical precision, where 1mm of deviation can break the optical illusion. She works in a state of meditative focus, layering high-contrast pigments to create depth that defies the two-dimensional surface.
+                            </p>
+<div class="mt-8">
+<ul class="space-y-4">
+<li class="flex items-center gap-4 border-b border-gallery-grey pb-4">
+<span class="font-label-mono text-label-mono text-void-black">01</span>
+<span class="font-body-md text-body-md">Precision-cut linework</span>
+</li>
+<li class="flex items-center gap-4 border-b border-gallery-grey pb-4">
+<span class="font-label-mono text-label-mono text-void-black">02</span>
+<span class="font-body-md text-body-md">High-viscosity acrylic layering</span>
+</li>
+<li class="flex items-center gap-4 border-b border-gallery-grey pb-4">
+<span class="font-label-mono text-label-mono text-void-black">03</span>
+<span class="font-body-md text-body-md">Geometric tension mapping</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="reveal-text border-t border-void-black pt-12">
+<h2 class="font-headline-lg text-headline-lg mb-8 uppercase">Philosophy</h2>
+<p class="font-body-lg text-body-lg leading-relaxed text-graphite italic">
+                                "The canvas is the bridge between light and shadow. I don't paint shapes; I paint the silence between them."
+                            </p>
+<p class="font-body-lg text-body-lg leading-relaxed text-graphite mt-6">
+                                Her artistic philosophy revolves around the concept of 'Equilibrium through Tension.' By utilizing the sharp contrast of black and white, she challenges the viewer's perception, forcing the eye to find harmony in a space of constant movement. It is a reflection of the dualities we inhabit—chaos and order, presence and absence.
+                            </p>
+</div>
+<div class="pt-8">
+<button class="bg-black text-white font-label-mono text-label-mono px-12 py-5 uppercase tracking-widest hover:bg-white hover:border hover:border-black hover:text-black transition-all duration-300">
+                                View Full Portfolio
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quote Block -->
+<section class="bg-void-black text-paper-white py-32 px-margin-desktop overflow-hidden relative">
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<span class="material-symbols-outlined text-paper-white text-6xl mb-8" data-icon="format_quote" data-weight="fill">format_quote</span>
+<p class="font-headline-lg text-headline-lg leading-tight uppercase reveal-text">
+                    "My work is a rhythmic dialogue between the eye and the spirit. It requires stillness to be truly seen."
+                </p>
+</div>
+<!-- Decorative Grid background -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: linear-gradient(#FFF 1px, transparent 1px), linear-gradient(90deg, #FFF 1px, transparent 1px); background-size: 100px 100px;"></div>
+</section>
+<!-- Philosophy Detail -->
+<section class="px-margin-desktop py-32 md:py-64">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4">
+<h3 class="font-label-mono text-label-mono uppercase tracking-[0.2em] border-l-4 border-void-black pl-6 py-2 mb-12 reveal-text">Artistic Principles</h3>
+</div>
+<div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-16">
+<div class="reveal-text">
+<h4 class="font-headline-md text-headline-md mb-4 uppercase">The Binary Lens</h4>
+<p class="text-graphite">By stripping away color, Verónica focuses the narrative on pure composition. The binary relationship of black and white represents the fundamental forces of the universe.</p>
+</div>
+<div class="reveal-text">
+<h4 class="font-headline-md text-headline-md mb-4 uppercase">Kinetic Stillness</h4>
+<p class="text-graphite">Her work creates the illusion of movement on a static surface, mirroring the constant flow of life despite our attempts to capture moments in time.</p>
+</div>
+<div class="reveal-text">
+<h4 class="font-headline-md text-headline-md mb-4 uppercase">The Caracas Influence</h4>
+<p class="text-graphite">The brutalist architecture and chaotic beauty of her hometown provide the structural DNA for her minimalist explorations in Buenos Aires.</p>
+</div>
+<div class="reveal-text">
+<h4 class="font-headline-md text-headline-md mb-4 uppercase">Infinite Depth</h4>
+<p class="text-graphite">Each piece is an invitation to look deeper, uncovering hidden patterns that only emerge through prolonged observation and focus.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 bg-white dark:bg-black border-t border-void-black dark:border-paper-white">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop space-y-8 md:space-y-0 max-w-full mx-auto">
+<div class="flex flex-col items-center md:items-start">
+<a class="font-headline-md text-headline-md font-bold text-void-black dark:text-paper-white uppercase mb-2" href="/">VERÓNICA CARRASQUEL</a>
+<p class="font-label-mono text-label-mono text-graphite">OPTICAL ARTIST | CARACAS TO BUENOS AIRES</p>
+</div>
+<div class="flex space-x-12">
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:text-void-black dark:hover:text-paper-white transition-colors" href="#">ARCHIVE</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:text-void-black dark:hover:text-paper-white transition-colors" href="#">PROCESS</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:text-void-black dark:hover:text-paper-white transition-colors" href="#">STUDIO</a>
+</div>
+<div class="text-center md:text-right">
+<p class="font-body-md text-body-md text-graphite dark:text-on-surface-variant uppercase tracking-tighter">© 2024 VERÓNICA CARRASQUEL. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Intersection Observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-text').forEach(el => observer.observe(el));
+
+        // Basic toggle interaction for "contrast" icon
+        document.querySelector('[data-icon="contrast"]').addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            document.body.style.backgroundColor = isDark ? '#000000' : '#FFFFFF';
+            document.body.style.color = isDark ? '#FFFFFF' : '#000000';
+        });
+    </script>
+</body></html>

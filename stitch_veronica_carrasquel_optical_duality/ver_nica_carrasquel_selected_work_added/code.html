@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VERÓNICA CARRASQUEL | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#e2e2e2",
+                    "on-secondary-fixed-variant": "#464747",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#1b1b1b",
+                    "primary": "#000000",
+                    "on-primary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "primary-container": "#1b1b1b",
+                    "on-error-container": "#93000a",
+                    "void-black": "#000000",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#cfc4c5",
+                    "on-primary-fixed-variant": "#474747",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#848484",
+                    "surface-container": "#eeeeee",
+                    "surface-variant": "#e2e2e2",
+                    "surface-bright": "#f9f9f9",
+                    "gallery-grey": "#F1F1F1",
+                    "on-surface-variant": "#4c4546",
+                    "surface-dim": "#dadada",
+                    "on-surface": "#1a1c1c",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "on-tertiary-container": "#848484",
+                    "on-primary-fixed": "#1b1b1b",
+                    "secondary-fixed": "#e3e2e2",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "secondary-container": "#e3e2e2",
+                    "inverse-primary": "#c6c6c6",
+                    "background": "#f9f9f9",
+                    "graphite": "#333333",
+                    "inverse-surface": "#2f3131",
+                    "on-background": "#1a1c1c",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "secondary": "#5e5e5e",
+                    "surface-container-low": "#f3f3f4",
+                    "surface-container-highest": "#e2e2e2",
+                    "secondary-fixed-dim": "#c7c6c6",
+                    "surface-tint": "#5e5e5e",
+                    "surface": "#f9f9f9",
+                    "tertiary": "#000000",
+                    "on-secondary-container": "#646464",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed": "#e2e2e2",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-error": "#ffffff",
+                    "outline": "#7e7576",
+                    "on-tertiary-fixed": "#1b1b1b",
+                    "surface-container-high": "#e8e8e8",
+                    "paper-white": "#FFFFFF"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "grid-cols": "12",
+                    "margin-mobile": "24px",
+                    "gutter": "32px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "label-mono": ["JetBrains Mono"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "headline-xl": ["Hanken Grotesk"],
+                    "body-md": ["Inter"],
+                    "caption": ["Inter"],
+                    "headline-lg": ["Hanken Grotesk"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-mono": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "headline-xl": ["80px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "caption": ["13px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #FFFFFF;
+            color: #000000;
+            overflow-x: hidden;
+        }
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .line-growth {
+            width: 0;
+            transition: width 1.2s ease-out;
+        }
+        .line-growth.active {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-paper-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-paper-white border-b border-primary flex justify-between items-center px-margin-desktop py-unit w-full max-w-full">
+<div class="font-headline-md text-headline-md tracking-tighter font-bold text-primary">VERÓNICA CARRASQUEL</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-primary line-through transition-all cursor-pointer" href="#work">WORK</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-secondary hover:text-primary transition-all cursor-pointer" href="#about">ABOUT</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-secondary hover:text-primary transition-all cursor-pointer" href="#exhibitions">EXHIBITIONS</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-secondary hover:text-primary transition-all cursor-pointer" href="#contact">CONTACT</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="cursor-pointer transition-all active:scale-95 text-primary" id="theme-toggle">
+<span class="material-symbols-outlined" data-icon="contrast">contrast</span>
+</button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-margin-desktop mb-40" id="work">
+<div class="grid grid-cols-12 gap-gutter items-end">
+<div class="col-span-12 lg:col-span-8 overflow-hidden group">
+<img alt="Verónica Carrasquel artwork featured large" class="w-full h-auto object-cover transform transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2vwjpMDT8zYnYpkBzQ2d1bzYAW90Pu4IXe57PV7ZQcG6DsxW3GwuQxKmdMZRpfOuo_oxLYKVyAun-soh4r8X7VLnh4qjcXDdiPNAhy1O3BrzFd5IGuvAG2dmKkkXh74J_Wkw42RBDh8XSJlYfVg2s18fphZs1pM3p-xhhHu0SZwVKAfinI-kmIMOyX_WksfQ8kaunqRGDa0wQzozHWKTKotIlbGvq3RF42inGkv-qB38x0wexoJJf7oE6ktsMY1cUAZXRSbYPKGgs"/>
+</div>
+<div class="col-span-12 lg:col-span-4 pb-12 reveal-up">
+<h1 class="font-headline-xl text-headline-xl mb-8 leading-none">
+                        MY WORK SPEAKS ABOUT DUALISTIC FLOW OF LIFE
+                    </h1>
+<div class="h-1 bg-primary w-24 mb-6 line-growth"></div>
+<p class="font-label-mono text-label-mono uppercase tracking-widest text-secondary">
+                        OPTICAL ART / ACRYLIC ON CANVAS
+                    </p>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="px-margin-desktop mb-40 bg-void-black text-on-primary py-32 -mx-0" id="about">
+<div class="max-w-4xl mx-auto reveal-up">
+<p class="font-label-mono text-label-mono uppercase tracking-[0.2em] mb-12 opacity-60">Identity / Narrative</p>
+<h2 class="font-headline-lg text-headline-lg mb-12 leading-tight">
+                    Verónica Carrasquel is a self-taught artist from Caracas, Venezuela, currently based in Buenos Aires. Her work explores the duality of life through the precision of optical art, using acrylic on canvas.
+                </h2>
+<div class="flex gap-12 border-t border-on-primary/20 pt-12">
+<div>
+<p class="font-label-mono text-label-mono mb-2 uppercase opacity-40">Current Location</p>
+<p class="font-body-md text-body-md">Buenos Aires, Argentina</p>
+</div>
+<div>
+<p class="font-label-mono text-label-mono mb-2 uppercase opacity-40">Medium</p>
+<p class="font-body-md text-body-md">Acrylic on Canvas</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery / Split Section -->
+<section class="px-margin-desktop mb-40">
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 lg:col-span-5 reveal-up">
+<img alt="Detailed view of optical art textures" class="w-full h-[600px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzNr95Hp6mOcZMniRT4loQ8LUq2xM5TITTmEld6-_W9wI03grUCtUvUsg3S87o58aqgkrQ1ko5f1Ja5ANWcmIjNeTCk0EMpcsUxgUH6KkvHW_WOIVp1kSFu3UcnmSyP9tVt_SMZjuXfY5BAYIuf1oB1R4oh3vffNW5zsHau3Nl3MR4XYF6daAfgLDqINGBNq2uAKlUZEQpFGY1_AxcWMPbp29FOl50mJnty4clNos0Ie5iy5S0KzFv5DQQUZVPouAKx6VzPM4Fsr8n"/>
+</div>
+<div class="col-span-12 lg:col-span-7 flex flex-col justify-center pl-0 lg:pl-20 reveal-up">
+<h3 class="font-headline-lg text-headline-lg mb-8">The Rhythm of Precision</h3>
+<p class="font-body-lg text-body-lg text-secondary max-w-xl mb-12">
+                        Influenced by the kinetic movement and mid-century aesthetic, every stroke is a calculated meditation on balance. The black and white palette serves as the purest expression of contrast and unity.
+                    </p>
+<button class="w-fit bg-primary text-on-primary px-10 py-5 font-label-mono text-label-mono uppercase hover:bg-paper-white hover:text-primary border border-primary transition-all">
+                        View Full Series
+                    </button>
+</div>
+</div>
+</section>
+<!-- Exhibition Section -->
+<section class="px-margin-desktop mb-40 reveal-up" id="selected-work"><div class="flex justify-between items-end mb-12 border-t-2 border-primary pt-12"><h2 class="font-headline-lg text-headline-lg uppercase tracking-tighter">SELECTED WORK</h2><p class="font-label-mono text-label-mono text-secondary">2023 — 2025</p></div><div class="grid grid-cols-12 gap-gutter"><div class="col-span-12 lg:col-span-4 group"><div class="overflow-hidden mb-6 bg-gallery-grey aspect-square"><img alt="DUALIDAD I" class="w-full h-full object-cover object-left transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXiabewYbBnTGlSieehiGZTGrvuwp-0Qd-53Y8l0E4bBWTnTKxsanuJROX3mt6H8mQdsKpQEWncgBY9HXyFPOxMi4yklJwn2gNnDA5tKokM3CJnjjvDelCnqXAzvoSsIjHQQC-CwImNANHVq-_SnEChVqQMDRxfgBkj792QH6ogNm_NDbIW4HpradnmbKExJAxcC6wxmU6CRefTofXU5PGkk2OzOtLgsLIQ7OtpuDbZYc5KzbgCAoTVlMAI4wqOeC-DueKvDza2uF1"/></div><div class="flex justify-between items-center"><h4 class="font-label-mono text-label-mono uppercase tracking-widest">DUALIDAD I</h4><p class="font-label-mono text-label-mono text-secondary opacity-60">ACRYLIC ON CANVAS</p></div></div><div class="col-span-12 lg:col-span-4 group"><div class="overflow-hidden mb-6 bg-gallery-grey aspect-square"><img alt="DUALIDAD II" class="w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXiabewYbBnTGlSieehiGZTGrvuwp-0Qd-53Y8l0E4bBWTnTKxsanuJROX3mt6H8mQdsKpQEWncgBY9HXyFPOxMi4yklJwn2gNnDA5tKokM3CJnjjvDelCnqXAzvoSsIjHQQC-CwImNANHVq-_SnEChVqQMDRxfgBkj792QH6ogNm_NDbIW4HpradnmbKExJAxcC6wxmU6CRefTofXU5PGkk2OzOtLgsLIQ7OtpuDbZYc5KzbgCAoTVlMAI4wqOeC-DueKvDza2uF1"/></div><div class="flex justify-between items-center"><h4 class="font-label-mono text-label-mono uppercase tracking-widest">DUALIDAD II</h4><p class="font-label-mono text-label-mono text-secondary opacity-60">ACRYLIC ON CANVAS</p></div></div><div class="col-span-12 lg:col-span-4 group"><div class="overflow-hidden mb-6 bg-gallery-grey aspect-square"><img alt="DUALIDAD III" class="w-full h-full object-cover object-right transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXiabewYbBnTGlSieehiGZTGrvuwp-0Qd-53Y8l0E4bBWTnTKxsanuJROX3mt6H8mQdsKpQEWncgBY9HXyFPOxMi4yklJwn2gNnDA5tKokM3CJnjjvDelCnqXAzvoSsIjHQQC-CwImNANHVq-_SnEChVqQMDRxfgBkj792QH6ogNm_NDbIW4HpradnmbKExJAxcC6wxmU6CRefTofXU5PGkk2OzOtLgsLIQ7OtpuDbZYc5KzbgCAoTVlMAI4wqOeC-DueKvDza2uF1"/></div><div class="flex justify-between items-center"><h4 class="font-label-mono text-label-mono uppercase tracking-widest">DUALIDAD III</h4><p class="font-label-mono text-label-mono text-secondary opacity-60">ACRYLIC ON CANVAS</p></div></div></div></section><section class="px-margin-desktop mb-40" id="exhibitions">
+<div class="border-t-2 border-primary mb-12"></div>
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 lg:col-span-4">
+<h2 class="font-headline-lg text-headline-lg mb-12 uppercase tracking-tighter">Exhibitions</h2>
+</div>
+<div class="col-span-12 lg:col-span-8">
+<div class="space-y-0">
+<!-- Exhibition Item 1 -->
+<div class="group border-b border-gallery-grey py-10 flex flex-col md:flex-row md:items-center justify-between hover:bg-gallery-grey transition-colors px-4 -mx-4 reveal-up">
+<div>
+<h4 class="font-headline-md text-headline-md text-primary mb-1">Centro Cultural Chacao</h4>
+<p class="font-body-md text-body-md text-secondary">Caracas, Venezuela</p>
+</div>
+<div class="mt-4 md:mt-0">
+<span class="font-label-mono text-label-mono text-secondary group-hover:text-primary">SOLO EXHIBITION</span>
+</div>
+</div>
+<!-- Exhibition Item 2 -->
+<div class="group border-b border-gallery-grey py-10 flex flex-col md:flex-row md:items-center justify-between hover:bg-gallery-grey transition-colors px-4 -mx-4 reveal-up">
+<div>
+<h4 class="font-headline-md text-headline-md text-primary mb-1">Galería La Caja</h4>
+<p class="font-body-md text-body-md text-secondary">Caracas, Venezuela</p>
+</div>
+<div class="mt-4 md:mt-0">
+<span class="font-label-mono text-label-mono text-secondary group-hover:text-primary">CONTEMPORARY GROUP SHOW</span>
+</div>
+</div>
+<!-- Exhibition Item 3 -->
+<div class="group border-b border-gallery-grey py-10 flex flex-col md:flex-row md:items-center justify-between hover:bg-gallery-grey transition-colors px-4 -mx-4 reveal-up">
+<div>
+<h4 class="font-headline-md text-headline-md text-primary mb-1">6ta Edición de la Muestra Pequeño Formato</h4>
+<p class="font-body-md text-body-md text-secondary">National Selection</p>
+</div>
+<div class="mt-4 md:mt-0">
+<span class="font-label-mono text-label-mono text-secondary group-hover:text-primary">ANNUAL SALON</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact CTA -->
+<section class="px-margin-desktop mb-40 text-center reveal-up" id="contact">
+<p class="font-label-mono text-label-mono uppercase tracking-[0.3em] mb-8">INQUIRIES &amp; ACQUISITIONS</p>
+<a class="font-headline-xl text-headline-xl block hover:line-through transition-all" href="mailto:contact@veronicacarrasquel.com">
+                HELLO@VERONICA.ART
+            </a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t-2 border-primary bg-paper-white flex flex-col md:flex-row justify-between items-center px-margin-desktop py-16 gap-gutter">
+<div class="font-headline-md text-headline-md font-bold text-primary">VERÓNICA CARRASQUEL</div>
+<div class="font-label-mono text-label-mono uppercase text-secondary">
+            © 2024 VERÓNICA CARRASQUEL. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex gap-8">
+<a class="font-label-mono text-label-mono uppercase text-secondary hover:text-primary transition-opacity duration-200" href="#">INSTAGRAM</a>
+<a class="font-label-mono text-label-mono uppercase text-secondary hover:text-primary transition-opacity duration-200" href="#">ARTSY</a>
+<a class="font-label-mono text-label-mono uppercase text-secondary hover:text-primary transition-opacity duration-200" href="#">CONTACT</a>
+</div>
+</footer>
+<script>
+        // Scroll Reveal Logic
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-up, .line-growth').forEach(el => observer.observe(el));
+
+        // Simple Theme Toggle (Simulation)
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            if (document.documentElement.classList.contains('dark')) {
+                document.body.style.backgroundColor = '#000000';
+                document.body.style.color = '#FFFFFF';
+            } else {
+                document.body.style.backgroundColor = '#FFFFFF';
+                document.body.style.color = '#000000';
+            }
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>

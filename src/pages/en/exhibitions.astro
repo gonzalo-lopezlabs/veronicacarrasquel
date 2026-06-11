@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import Exhibitions from '../../components/Exhibitions.astro';
+import { en } from '../../i18n/en';
+---
+
+<Base
+  t={en}
+  title={en.meta.exhibitionsTitle}
+  description={en.meta.exhibitionsDescription}
+  altUrl="/es/exhibiciones/"
+  active="exhibitions"
+>
+  <Exhibitions t={en} />
+</Base>

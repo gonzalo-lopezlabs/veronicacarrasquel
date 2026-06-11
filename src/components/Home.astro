@@ -1,0 +1,89 @@
+---
+import type { Dict } from '../i18n/es';
+
+interface Props {
+  t: Dict;
+}
+
+const { t } = Astro.props;
+const works = ['/images/obra-1.jpg', '/images/obra-2.jpg', '/images/obra-3.jpg'];
+---
+
+<!-- Hero -->
+<section class="px-margin-mobile lg:px-margin-desktop mb-40" id="work">
+  <div class="grid grid-cols-12 gap-gutter items-end">
+    <div class="col-span-12 lg:col-span-8 overflow-hidden group">
+      <img
+        src="/images/hero.jpg"
+        alt={t.home.heroAlt}
+        class="w-full h-auto object-cover transform transition-transform duration-1000 group-hover:scale-105"
+      />
+    </div>
+    <div class="col-span-12 lg:col-span-4 pb-12 reveal-up">
+      <h1 class="font-headline text-headline-xl mb-8 leading-none uppercase">
+        {t.home.heroTitle}
+      </h1>
+      <div class="h-1 bg-void-black dark:bg-paper-white w-24 line-growth"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Presentación -->
+<section class="mb-40 bg-void-black text-paper-white dark:bg-paper-white dark:text-void-black py-32 px-margin-mobile lg:px-margin-desktop transition-colors duration-300" id="about">
+  <div class="max-w-4xl mx-auto reveal-up">
+    <p class="font-mono text-label-mono uppercase tracking-[0.2em] mb-12 opacity-60">
+      {t.home.aboutLabel}
+    </p>
+    <h2 class="font-headline text-headline-lg mb-12 leading-tight">
+      {t.home.aboutText}
+    </h2>
+    <div class="flex flex-col sm:flex-row gap-12 border-t border-current/20 pt-12">
+      <div>
+        <p class="font-mono text-label-mono mb-2 uppercase opacity-40">{t.home.locationLabel}</p>
+        <p class="font-body text-body-md">{t.home.locationValue}</p>
+      </div>
+      <div>
+        <p class="font-mono text-label-mono mb-2 uppercase opacity-40">{t.home.mediumLabel}</p>
+        <p class="font-body text-body-md">{t.home.mediumValue}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Obras seleccionadas -->
+<section class="px-margin-mobile lg:px-margin-desktop mb-40 reveal-up" id="selected">
+  <div class="grid grid-cols-12 gap-gutter">
+    {
+      t.home.works.map((name, i) => (
+        <div class="col-span-12 lg:col-span-4 group">
+          <div class="overflow-hidden mb-6 bg-gallery-grey dark:bg-iron-grey aspect-square">
+            <img
+              src={works[i]}
+              alt={name}
+              class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+            />
+          </div>
+          <div class="flex justify-between items-center">
+            <h4 class="font-mono text-label-mono uppercase tracking-widest">{name}</h4>
+            <p class="font-mono text-label-mono text-secondary dark:text-silver opacity-60">
+              {t.home.medium}
+            </p>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<!-- Contacto -->
+<section class="px-margin-mobile lg:px-margin-desktop mb-40 text-center reveal-up" id="contact">
+  <p class="font-mono text-label-mono uppercase tracking-[0.3em] mb-8 text-secondary dark:text-silver">
+    {t.home.contactLabel}
+  </p>
+  <a
+    href={`mailto:${t.contact.email}`}
+    class="font-headline text-headline-md inline-block border-b-2 border-void-black dark:border-paper-white pb-2 hover:opacity-60 transition-opacity break-all"
+  >
+    {t.contact.email}
+  </a>
+</section>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SOBRE MÍ | VERÓNICA CARRASQUEL</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e2e2e2",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#5e5e5e",
+                    "primary-fixed": "#e2e2e2",
+                    "surface-container-highest": "#e2e2e2",
+                    "primary": "#000000",
+                    "on-surface-variant": "#4c4546",
+                    "on-surface": "#1a1c1c",
+                    "on-primary-fixed-variant": "#474747",
+                    "secondary-fixed-dim": "#c7c6c6",
+                    "surface": "#f9f9f9",
+                    "surface-container": "#eeeeee",
+                    "surface-bright": "#f9f9f9",
+                    "tertiary": "#000000",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "graphite": "#333333",
+                    "on-primary-container": "#848484",
+                    "secondary-container": "#e3e2e2",
+                    "inverse-on-surface": "#f0f1f1",
+                    "tertiary-fixed": "#e2e2e2",
+                    "void-black": "#000000",
+                    "paper-white": "#FFFFFF",
+                    "secondary": "#5e5e5e",
+                    "secondary-fixed": "#e3e2e2",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#646464",
+                    "surface-dim": "#dadada",
+                    "on-error": "#ffffff",
+                    "background": "#f9f9f9",
+                    "primary-container": "#1b1b1b",
+                    "inverse-surface": "#2f3131",
+                    "on-primary-fixed": "#1b1b1b",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "surface-container-high": "#e8e8e8",
+                    "on-secondary-fixed-variant": "#464747",
+                    "on-tertiary-fixed": "#1b1b1b",
+                    "inverse-primary": "#c6c6c6",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#1a1c1c",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f3f3f4",
+                    "surface-container-lowest": "#ffffff",
+                    "gallery-grey": "#F1F1F1",
+                    "outline": "#7e7576",
+                    "tertiary-container": "#1b1b1b",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#cfc4c5",
+                    "on-tertiary-container": "#848484"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "32px",
+                    "unit": "8px",
+                    "grid-cols": "12",
+                    "margin-mobile": "24px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Hanken Grotesk"],
+                    "headline-xl": ["Hanken Grotesk"],
+                    "body-md": ["Inter"],
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "caption": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-mono": ["JetBrains Mono"]
+            },
+            "fontSize": {
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-xl": ["80px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "caption": ["13px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-mono": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #FFFFFF;
+            color: #000000;
+            overflow-x: hidden;
+        }
+        .reveal-text {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-text.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .image-zoom-container {
+            overflow: hidden;
+            border: 1px solid #000000;
+        }
+        .image-zoom-container img {
+            transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .image-zoom-container:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full bg-white dark:bg-black border-b border-void-black dark:border-paper-white z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop py-unit-4 max-w-full mx-auto">
+<a class="font-headline-md text-headline-md font-bold tracking-tighter text-void-black dark:text-paper-white uppercase" href="/">VERÓNICA CARRASQUEL</a>
+<nav class="hidden md:flex items-center space-x-12">
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:line-through transition-all duration-300" href="#">OBRA</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-void-black dark:text-paper-white border-b-2 border-void-black dark:border-paper-white pb-1 transition-all duration-300" href="#">SOBRE MÍ</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:line-through transition-all duration-300" href="#">EXHIBICIONES</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:line-through transition-all duration-300" href="#">CONTACTO</a>
+</nav>
+<button class="flex items-center justify-center p-2 hover:opacity-70 transition-opacity" data-icon="contrast">
+<span class="material-symbols-outlined">contrast</span>
+</button>
+</div>
+</header>
+<main class="pt-32 pb-32">
+<!-- Hero Section -->
+<section class="px-margin-desktop mb-32 md:mb-48">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
+<div class="md:col-span-8">
+<span class="font-label-mono text-label-mono uppercase tracking-[0.3em] mb-4 block reveal-text">La Narrativa</span>
+<h1 class="font-headline-xl text-headline-xl mb-0 reveal-text uppercase">EL VACÍO Y LA FORMA.</h1>
+</div>
+<div class="md:col-span-4 hidden md:block">
+<p class="font-label-mono text-label-mono uppercase border-t border-void-black pt-4">Perfil: Artista y Visionaria</p>
+</div>
+</div>
+</section>
+<!-- Main Content -->
+<section class="px-margin-desktop mb-32 md:mb-64">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Left: Image Section -->
+<div class="md:col-span-6 mb-16 md:mb-0">
+<div class="image-zoom-container sticky top-40">
+<img alt="Arte óptico de Verónica Carrasquel" class="w-full h-auto grayscale object-cover aspect-[1.49]" src="https://lh3.googleusercontent.com/aida/AP1WRLtg-YBlnEqCp8IwmLz1wFgCmMT8-AsInmMuL-zaqwYOJv2l-M6XpPMR24dfWcCu8zwz0Gvbj7t9_ttwzNJ68ZDpZpAlH0d5nGl8ImAdbCr-jjXujn6jlHnnq75t1aRR2qtzREcqnvD7eXBELZ7nZWUaUVt1KRsgtppM_3jid1T8vyu0sJcmKs0kfu_Oh8rqGKkATy7F2AUvJiJ6WswgzgW_ek-wSoNuBcsz2B89fldibqHFe_IQb5lWPIk"/>
+<div class="mt-4 flex justify-between items-start">
+<p class="font-label-mono text-label-mono text-graphite uppercase">ESTUDIO DE DUALIDAD NO. 5</p>
+<p class="font-label-mono text-label-mono text-graphite uppercase">ACRÍLICO SOBRE LIENZO</p>
+</div>
+</div>
+</div>
+<!-- Right: Bio Content -->
+<div class="md:col-span-5 md:col-start-8">
+<div class="space-y-16">
+<div class="reveal-text">
+<h2 class="font-headline-lg text-headline-lg mb-8 uppercase">EL CAMINO</h2>
+<p class="font-body-lg text-body-lg leading-relaxed text-graphite">
+                            Nacida en el corazón vibrante de Caracas, Venezuela, el camino de Verónica Carrasquel hacia el lienzo no fue trazado por planos académicos tradicionales. Es una fuerza autodidacta, impulsada por una necesidad innata de traducir la energía cinética de su entorno en formas estáticas, pero vivas.
+                        </p>
+<p class="font-body-lg text-body-lg leading-relaxed text-graphite mt-6">
+                            Su migración a Buenos Aires marcó un cambio fundamental en su lenguaje visual. La geometría arquitectónica de la metrópoli del sur comenzó a fusionarse con su ritmo tropical ancestral, llevándola al preciso mundo del arte óptico. Fue aquí donde su exploración del dualismo encontró su voz definitiva.
+                        </p>
+</div>
+<div class="reveal-text border-t border-void-black pt-12">
+<h2 class="font-headline-lg text-headline-lg mb-8 uppercase">TÉCNICA</h2>
+<p class="font-body-lg text-body-lg leading-relaxed text-graphite">
+                            Para Carrasquel, el acrílico sobre lienzo no es solo un medio, sino una disciplina meticulosa. Su técnica exige una precisión casi quirúrgica, donde 1 mm de desviación puede romper la ilusión óptica. Trabaja en un estado de enfoque meditativo, aplicando capas de pigmentos de alto contraste para crear una profundidad que desafía la superficie bidimensional.
+                        </p>
+<div class="mt-8">
+<ul class="space-y-4">
+<li class="flex items-center gap-4 border-b border-gallery-grey pb-4">
+<span class="font-label-mono text-label-mono text-void-black">01</span>
+<span class="font-body-md text-body-md">Trazado de líneas de precisión</span>
+</li>
+<li class="flex items-center gap-4 border-b border-gallery-grey pb-4">
+<span class="font-label-mono text-label-mono text-void-black">02</span>
+<span class="font-body-md text-body-md">Superposición de acrílico de alta viscosidad</span>
+</li>
+<li class="flex items-center gap-4 border-b border-gallery-grey pb-4">
+<span class="font-label-mono text-label-mono text-void-black">03</span>
+<span class="font-body-md text-body-md">Mapeo de tensión geométrica</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="reveal-text border-t border-void-black pt-12">
+<h2 class="font-headline-lg text-headline-lg mb-8 uppercase">FILOSOFÍA</h2>
+<p class="font-body-lg text-body-lg leading-relaxed text-graphite italic">
+                            "El lienzo es el puente entre la luz y la sombra. No pinto formas; pinto el silencio entre ellas."
+                        </p>
+<p class="font-body-lg text-body-lg leading-relaxed text-graphite mt-6">
+                            Su filosofía artística gira en torno al concepto de 'Equilibrio a través de la Tensión'. Al utilizar el fuerte contraste del blanco y negro, desafía la percepción del espectador, obligando al ojo a encontrar armonía en un espacio de constante movimiento. Es un reflejo de las dualidades en las que habitamos: caos y orden, presencia y ausencia.
+                        </p>
+</div>
+<div class="pt-8">
+<button class="bg-black text-white font-label-mono text-label-mono px-12 py-5 uppercase tracking-widest hover:bg-white hover:border hover:border-black hover:text-black transition-all duration-300">
+                            VER PORTAFOLIO COMPLETO
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quote Block -->
+<section class="bg-void-black text-paper-white py-32 px-margin-desktop overflow-hidden relative">
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<span class="material-symbols-outlined text-paper-white text-6xl mb-8" data-icon="format_quote" data-weight="fill">format_quote</span>
+<p class="font-headline-lg text-headline-lg leading-tight uppercase reveal-text">
+                "MI TRABAJO ES UN DIÁLOGO RÍTMICO ENTRE EL OJO Y EL ESPÍRITU. REQUIERE QUIETUD PARA SER VISTO REALMENTE."
+            </p>
+</div>
+<!-- Decorative Grid background -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: linear-gradient(#FFF 1px, transparent 1px), linear-gradient(90deg, #FFF 1px, transparent 1px); background-size: 100px 100px;"></div>
+</section>
+<!-- Philosophy Detail -->
+<section class="px-margin-desktop py-32 md:py-64">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4">
+<h3 class="font-label-mono text-label-mono uppercase tracking-[0.2em] border-l-4 border-void-black pl-6 py-2 mb-12 reveal-text">PRINCIPIOS ARTÍSTICOS</h3>
+</div>
+<div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-16">
+<div class="reveal-text">
+<h4 class="font-headline-md text-headline-md mb-4 uppercase">EL LENTE BINARIO</h4>
+<p class="text-graphite">Al eliminar el color, Verónica enfoca la narrativa en la composición pura. La relación binaria del blanco y negro representa las fuerzas fundamentales del universo.</p>
+</div>
+<div class="reveal-text">
+<h4 class="font-headline-md text-headline-md mb-4 uppercase">QUIETUD CINÉTICA</h4>
+<p class="text-graphite">Su trabajo crea la ilusión de movimiento sobre una superficie estática, reflejando el flujo constante de la vida a pesar de nuestros intentos por capturar momentos en el tiempo.</p>
+</div>
+<div class="reveal-text">
+<h4 class="font-headline-md text-headline-md mb-4 uppercase">LA INFLUENCIA DE CARACAS</h4>
+<p class="text-graphite">La arquitectura brutalista y la belleza caótica de su ciudad natal proporcionan el ADN estructural para sus exploraciones minimalistas en Buenos Aires.</p>
+</div>
+<div class="reveal-text">
+<h4 class="font-headline-md text-headline-md mb-4 uppercase">PROFUNDIDAD INFINITA</h4>
+<p class="text-graphite">Cada pieza es una invitación a mirar más profundamente, descubriendo patrones ocultos que solo emergen a través de una observación y enfoque prolongados.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 bg-white dark:bg-black border-t border-void-black dark:border-paper-white">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop space-y-8 md:space-y-0 max-w-full mx-auto">
+<div class="flex flex-col items-center md:items-start">
+<a class="font-headline-md text-headline-md font-bold text-void-black dark:text-paper-white uppercase mb-2" href="/">VERÓNICA CARRASQUEL</a>
+<p class="font-label-mono text-label-mono text-graphite uppercase">ARTISTA ÓPTICA | DE CARACAS A BUENOS AIRES</p>
+</div>
+<div class="flex space-x-12">
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:text-void-black dark:hover:text-paper-white transition-colors" href="#">ARCHIVO</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:text-void-black dark:hover:text-paper-white transition-colors" href="#">PROCESO</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:text-void-black dark:hover:text-paper-white transition-colors" href="#">ESTUDIO</a>
+</div>
+<div class="text-center md:text-right">
+<p class="font-body-md text-body-md text-graphite dark:text-on-surface-variant uppercase tracking-tighter">© 2024 VERÓNICA CARRASQUEL. TODOS LOS DERECHOS RESERVADOS.</p>
+</div>
+</div>
+</footer>
+<script>
+    // Intersection Observer for reveal animations
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal-text').forEach(el => observer.observe(el));
+
+    // Basic toggle interaction for "contrast" icon
+    document.querySelector('[data-icon="contrast"]').addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+        const isDark = document.documentElement.classList.contains('dark');
+        document.body.style.backgroundColor = isDark ? '#000000' : '#FFFFFF';
+        document.body.style.color = isDark ? '#FFFFFF' : '#000000';
+    });
+</script>
+</body></html>

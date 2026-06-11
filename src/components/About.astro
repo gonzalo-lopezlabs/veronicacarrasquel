@@ -1,0 +1,111 @@
+---
+import type { Dict } from '../i18n/es';
+
+interface Props {
+  t: Dict;
+}
+
+const { t } = Astro.props;
+---
+
+<!-- Hero -->
+<section class="px-margin-mobile lg:px-margin-desktop mb-32 md:mb-48">
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
+    <div class="md:col-span-8">
+      <span class="font-mono text-label-mono uppercase tracking-[0.3em] mb-4 block reveal-up">
+        {t.about.heroLabel}
+      </span>
+      <h1 class="font-headline text-headline-xl uppercase reveal-up">{t.about.heroTitle}</h1>
+    </div>
+    <div class="md:col-span-4 hidden md:block">
+      <p class="font-mono text-label-mono uppercase border-t border-void-black dark:border-paper-white pt-4">
+        {t.about.profile}
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Bio -->
+<section class="px-margin-mobile lg:px-margin-desktop mb-32 md:mb-64">
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+    <div class="md:col-span-6 mb-16 md:mb-0">
+      <div class="image-zoom-container sticky top-40 border border-void-black dark:border-paper-white">
+        <img
+          src="/images/bio.jpg"
+          alt={t.about.imageAlt}
+        />
+      </div>
+      <div class="mt-4 flex justify-between items-start">
+        <p class="font-mono text-label-mono text-graphite dark:text-silver uppercase">
+          {t.about.imageCaption}
+        </p>
+        <p class="font-mono text-label-mono text-graphite dark:text-silver uppercase">
+          {t.about.imageMedium}
+        </p>
+      </div>
+    </div>
+    <div class="md:col-span-5 md:col-start-8">
+      <div class="space-y-16">
+        <div class="reveal-up">
+          <h2 class="font-headline text-headline-lg mb-8 uppercase">{t.about.bioTitle}</h2>
+          {
+            t.about.bioParagraphs.map((p, i) => (
+              <p
+                class:list={[
+                  'font-body text-body-lg leading-relaxed text-graphite dark:text-silver',
+                  i > 0 && 'mt-6',
+                ]}
+              >
+                {p}
+              </p>
+            ))
+          }
+        </div>
+        <div class="pt-8">
+          <a
+            href={t.routes.home}
+            class="inline-block bg-void-black text-paper-white border border-void-black hover:bg-paper-white hover:text-void-black dark:bg-paper-white dark:text-void-black dark:border-paper-white dark:hover:bg-void-black dark:hover:text-paper-white px-12 py-5 font-mono text-label-mono uppercase tracking-widest transition-colors"
+          >
+            {t.about.cta}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cita -->
+<section class="bg-void-black text-paper-white dark:bg-paper-white dark:text-void-black py-32 px-margin-mobile lg:px-margin-desktop overflow-hidden relative transition-colors duration-300">
+  <div class="max-w-4xl mx-auto text-center relative z-10">
+    <span class="material-symbols-outlined text-6xl mb-8" aria-hidden="true">format_quote</span>
+    <p class="font-headline text-headline-lg leading-tight uppercase reveal-up">
+      {t.about.quote}
+    </p>
+  </div>
+  <div
+    class="absolute inset-0 opacity-10 pointer-events-none"
+    style="background-image: linear-gradient(currentColor 1px, transparent 1px), linear-gradient(90deg, currentColor 1px, transparent 1px); background-size: 100px 100px;"
+  >
+  </div>
+</section>
+
+<!-- Principios artísticos -->
+<section class="px-margin-mobile lg:px-margin-desktop py-32 md:py-64">
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+    <div class="md:col-span-4">
+      <h3 class="font-mono text-label-mono uppercase tracking-[0.2em] border-l-4 border-void-black dark:border-paper-white pl-6 py-2 mb-12 reveal-up">
+        {t.about.principlesTitle}
+      </h3>
+    </div>
+    <div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-16">
+      {
+        t.about.principles.map((p) => (
+          <div class="reveal-up">
+            <h4 class="font-headline text-headline-md mb-4 uppercase">{p.title}</h4>
+            <p class="text-graphite dark:text-silver">{p.text}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

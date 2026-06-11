@@ -1,0 +1,5 @@
+{
+  "extends": "astro/tsconfigs/base",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist", "idea.html", "stitch_veronica_carrasquel_optical_duality"]
+}

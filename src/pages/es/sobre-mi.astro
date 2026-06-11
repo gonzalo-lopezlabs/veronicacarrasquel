@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import About from '../../components/About.astro';
+import { es } from '../../i18n/es';
+---
+
+<Base
+  t={es}
+  title={es.meta.aboutTitle}
+  description={es.meta.aboutDescription}
+  altUrl="/en/about/"
+  active="about"
+>
+  <About t={es} />
+</Base>

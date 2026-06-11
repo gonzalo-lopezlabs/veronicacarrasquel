@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EXHIBICIONES — VERÓNICA CARRASQUEL</title>
+<!-- Google Fonts: Hanken Grotesk, Inter, JetBrains Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;family=Inter:ital,wght@0,100..900;1,100..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&amp;family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "surface-variant": "#e2e2e2",
+                  "error": "#ba1a1a",
+                  "surface-tint": "#5e5e5e",
+                  "primary-fixed": "#e2e2e2",
+                  "surface-container-highest": "#e2e2e2",
+                  "primary": "#000000",
+                  "on-surface-variant": "#4c4546",
+                  "on-surface": "#1a1c1c",
+                  "on-primary-fixed-variant": "#474747",
+                  "secondary-fixed-dim": "#c7c6c6",
+                  "surface": "#f9f9f9",
+                  "surface-container": "#eeeeee",
+                  "surface-bright": "#f9f9f9",
+                  "tertiary": "#000000",
+                  "on-tertiary": "#ffffff",
+                  "on-tertiary-fixed-variant": "#474747",
+                  "graphite": "#333333",
+                  "on-primary-container": "#848484",
+                  "secondary-container": "#e3e2e2",
+                  "inverse-on-surface": "#f0f1f1",
+                  "tertiary-fixed": "#e2e2e2",
+                  "void-black": "#000000",
+                  "paper-white": "#FFFFFF",
+                  "secondary": "#5e5e5e",
+                  "secondary-fixed": "#e3e2e2",
+                  "on-primary": "#ffffff",
+                  "on-secondary-container": "#646464",
+                  "surface-dim": "#dadada",
+                  "on-error": "#ffffff",
+                  "background": "#f9f9f9",
+                  "primary-container": "#1b1b1b",
+                  "inverse-surface": "#2f3131",
+                  "on-primary-fixed": "#1b1b1b",
+                  "primary-fixed-dim": "#c6c6c6",
+                  "surface-container-high": "#e8e8e8",
+                  "on-secondary-fixed-variant": "#464747",
+                  "on-tertiary-fixed": "#1b1b1b",
+                  "inverse-primary": "#c6c6c6",
+                  "on-secondary-fixed": "#1b1c1c",
+                  "on-secondary": "#ffffff",
+                  "on-background": "#1a1c1c",
+                  "error-container": "#ffdad6",
+                  "surface-container-low": "#f3f3f4",
+                  "surface-container-lowest": "#ffffff",
+                  "gallery-grey": "#F1F1F1",
+                  "outline": "#7e7576",
+                  "tertiary-container": "#1b1b1b",
+                  "tertiary-fixed-dim": "#c6c6c6",
+                  "on-error-container": "#93000a",
+                  "outline-variant": "#cfc4c5",
+                  "on-tertiary-container": "#848484"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "full": "9999px"
+          },
+          "spacing": {
+                  "gutter": "32px",
+                  "unit": "8px",
+                  "grid-cols": "12",
+                  "margin-mobile": "24px",
+                  "margin-desktop": "64px"
+          },
+          "fontFamily": {
+                  "headline-lg": ["Hanken Grotesk"],
+                  "headline-xl": ["Hanken Grotesk"],
+                  "body-md": ["Inter"],
+                  "headline-lg-mobile": ["Hanken Grotesk"],
+                  "headline-md": ["Hanken Grotesk"],
+                  "caption": ["Inter"],
+                  "body-lg": ["Inter"],
+                  "label-mono": ["JetBrains Mono"]
+          },
+          "fontSize": {
+                  "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                  "headline-xl": ["80px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                  "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                  "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                  "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                  "caption": ["13px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                  "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                  "label-mono": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "500"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      background-color: #FFFFFF;
+      color: #000000;
+      -webkit-font-smoothing: antialiased;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    .exhibition-row:hover .exhibition-year {
+      transform: translateX(8px);
+    }
+    .line-drawing {
+      transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+  </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-void-black selection:text-paper-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full bg-white dark:bg-black border-b border-void-black dark:border-paper-white z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop py-unit-4 max-w-full mx-auto">
+<a class="font-headline-md text-headline-md font-bold tracking-tighter text-void-black dark:text-paper-white" href="/">
+        VERÓNICA CARRASQUEL
+      </a>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:line-through transition-all duration-300" href="#">OBRA</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:line-through transition-all duration-300" href="#">SOBRE MÍ</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-void-black dark:text-paper-white border-b-2 border-void-black dark:border-paper-white pb-1 hover:line-through transition-all duration-300" href="#">EXHIBICIONES</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:line-through transition-all duration-300" href="#">CONTACTO</a>
+</div>
+<div class="flex items-center">
+<button class="p-2" id="theme-toggle">
+<span class="material-symbols-outlined text-void-black dark:text-paper-white" data-icon="contrast">contrast</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-40 pb-32 min-h-screen">
+<!-- Header Section -->
+<header class="px-margin-desktop mb-24 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-8">
+<h1 class="font-headline-xl text-headline-xl uppercase">Exhibiciones</h1>
+<p class="font-label-mono text-label-mono text-graphite mt-4 max-w-md">
+            RESUMEN CRONOLÓGICO DE PRESENTACIONES INDIVIDUALES Y COLECTIVAS, SALONES Y PROYECTOS CURATORIALES INTERNACIONALES.
+          </p>
+</div>
+</div>
+</header>
+<!-- Exhibition List Section -->
+<section class="px-margin-desktop max-w-screen-2xl mx-auto">
+<div class="flex flex-col">
+<!-- Row 1: Solo Exhibition -->
+<div class="exhibition-row border-t border-void-black/10 py-12 group transition-colors duration-500 hover:bg-gallery-grey">
+<div class="grid grid-cols-12 gap-gutter items-baseline">
+<div class="col-span-12 md:col-span-2">
+<span class="exhibition-year font-label-mono text-label-mono text-graphite block transition-transform duration-500">2023</span>
+</div>
+<div class="col-span-12 md:col-span-5 mt-2 md:mt-0">
+<h3 class="font-headline-md text-headline-md uppercase">Líneas de Convergencia</h3>
+<p class="font-label-mono text-label-mono text-graphite mt-1">Exposición Individual</p>
+</div>
+<div class="col-span-12 md:col-span-5 mt-4 md:mt-0 text-left md:text-right">
+<p class="font-label-mono text-label-mono uppercase tracking-tighter">Centro Cultural Chacao</p>
+<p class="font-label-mono text-label-mono text-graphite">Caracas, Venezuela</p>
+</div>
+</div>
+</div>
+<!-- Row 2: Group Show -->
+<div class="exhibition-row border-t border-void-black/10 py-12 group transition-colors duration-500 hover:bg-gallery-grey">
+<div class="grid grid-cols-12 gap-gutter items-baseline">
+<div class="col-span-12 md:col-span-2">
+<span class="exhibition-year font-label-mono text-label-mono text-graphite block transition-transform duration-500">2021—2022</span>
+</div>
+<div class="col-span-12 md:col-span-5 mt-2 md:mt-0">
+<h3 class="font-headline-md text-headline-md uppercase">Abstracción Permanente</h3>
+<p class="font-label-mono text-label-mono text-graphite mt-1">Muestra Colectiva Contemporánea</p>
+</div>
+<div class="col-span-12 md:col-span-5 mt-4 md:mt-0 text-left md:text-right">
+<p class="font-label-mono text-label-mono uppercase tracking-tighter">Galería La Caja</p>
+<p class="font-label-mono text-label-mono text-graphite">Caracas, Venezuela</p>
+</div>
+</div>
+</div>
+<!-- Row 3: Annual Salon -->
+<div class="exhibition-row border-t border-void-black/10 py-12 group transition-colors duration-500 hover:bg-gallery-grey">
+<div class="grid grid-cols-12 gap-gutter items-baseline">
+<div class="col-span-12 md:col-span-2">
+<span class="exhibition-year font-label-mono text-label-mono text-graphite block transition-transform duration-500">2018</span>
+</div>
+<div class="col-span-12 md:col-span-5 mt-2 md:mt-0">
+<h3 class="font-headline-md text-headline-md uppercase">6ta Edición de la Muestra Pequeño Formato</h3>
+<p class="font-label-mono text-label-mono text-graphite mt-1">Salón Anual (Selección Nacional)</p>
+</div>
+<div class="col-span-12 md:col-span-5 mt-4 md:mt-0 text-left md:text-right">
+<p class="font-label-mono text-label-mono uppercase tracking-tighter">Museo de Arte Contemporáneo</p>
+<p class="font-label-mono text-label-mono text-graphite">Caracas, Venezuela</p>
+</div>
+</div>
+</div>
+<!-- Row 4: International Presentation -->
+<div class="exhibition-row border-t border-b border-void-black/10 py-12 group transition-colors duration-500 hover:bg-gallery-grey">
+<div class="grid grid-cols-12 gap-gutter items-baseline">
+<div class="col-span-12 md:col-span-2">
+<span class="exhibition-year font-label-mono text-label-mono text-graphite block transition-transform duration-500">2016</span>
+</div>
+<div class="col-span-12 md:col-span-5 mt-2 md:mt-0">
+<h3 class="font-headline-md text-headline-md uppercase">Optical Echoes</h3>
+<p class="font-label-mono text-label-mono text-graphite mt-1">Exposición en Dúo</p>
+</div>
+<div class="col-span-12 md:col-span-5 mt-4 md:mt-0 text-left md:text-right">
+<p class="font-label-mono text-label-mono uppercase tracking-tighter">Vanguard Projects</p>
+<p class="font-label-mono text-label-mono text-graphite">Miami, EE. UU.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Anchor Section -->
+<section class="mt-32 px-margin-desktop max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-7">
+<div class="aspect-[16/9] bg-gallery-grey relative overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 opacity-10">
+<!-- Geometric abstraction representing the artist's work -->
+<svg height="100%" preserveaspectratio="none" viewbox="0 0 100 100" width="100%">
+<line stroke="black" stroke-width="0.1" x1="0" x2="100" y1="0" y2="100"></line>
+<line stroke="black" stroke-width="0.1" x1="10" x2="110" y1="0" y2="100"></line>
+<line stroke="black" stroke-width="0.1" x1="20" x2="120" y1="0" y2="100"></line>
+<line stroke="black" stroke-width="0.1" x1="30" x2="130" y1="0" y2="100"></line>
+<line stroke="black" stroke-width="0.1" x1="40" x2="140" y1="0" y2="100"></line>
+<line stroke="black" stroke-width="0.1" x1="50" x2="150" y1="0" y2="100"></line>
+<line stroke="black" stroke-width="0.1" x1="60" x2="160" y1="0" y2="100"></line>
+</svg>
+</div>
+<img alt="Instalación de arte" class="w-3/4 h-3/4 object-cover grayscale brightness-110" data-alt="A minimalist architectural photograph of a high-ceilinged modern gallery space in light mode. The room features a single large-scale optical art installation composed of rhythmic black and white geometric lines. Bright, diffused daylight pours through unseen windows, casting soft shadows. The overall aesthetic is one of quiet authority, cerebral depth, and architectural precision in black and white." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDar_wP3wBJE65KD1y7yNwHiaRBI0OJ6kI0q5UZlpQxkMXAI23mb56A7JANGp7-3tsefYiRc8bmm-RnuJz_5jYMRzzogYob6dwD2OO4Cf-sxRX_ErT978aAKZ_boMkkF002nHU-02O8OwtQbkh-yQDHoyk-HYp5kY5aYH_y2aesdqAH6zY7ieWuMYbewUPGs_R7XhZovJ4ch8du7ByjYCpnJkI5bzjg4noKDDJq_XpPDFFZB1G07_bi1dbMre-WL8GY0Aa-anzE5qsE"/>
+</div>
+</div>
+<div class="col-span-12 md:col-span-5 flex flex-col justify-end mt-12 md:mt-0">
+<h4 class="font-label-mono text-label-mono uppercase mb-4 tracking-[0.2em]">Contacto para Catálogos</h4>
+<p class="font-body-md text-body-md text-graphite mb-8">
+            La documentación completa de exposiciones pasadas, incluyendo escaneos de alta resolución de catálogos y textos curatoriales, está disponible bajo solicitud para investigación institucional.
+          </p>
+<a class="inline-flex items-center justify-between border border-void-black px-6 py-4 font-label-mono text-label-mono uppercase group transition-all duration-300 hover:bg-void-black hover:text-paper-white" href="#">
+<span>Consultar archivo</span>
+<span class="material-symbols-outlined ml-4 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 bg-white dark:bg-black border-t border-void-black dark:border-paper-white">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop space-y-8 md:space-y-0">
+<div class="font-headline-md text-headline-md font-bold text-void-black dark:text-paper-white">
+        VERÓNICA CARRASQUEL
+      </div>
+<div class="flex space-x-12">
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:text-void-black dark:hover:text-paper-white transition-colors" href="#">ARCHIVO</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:text-void-black dark:hover:text-paper-white transition-colors" href="#">PROCESO</a>
+<a class="font-label-mono text-label-mono uppercase tracking-widest text-graphite dark:text-on-surface-variant hover:text-void-black dark:hover:text-paper-white transition-colors" href="#">ESTUDIO</a>
+</div>
+<div class="font-label-mono text-[10px] tracking-tighter text-graphite dark:text-on-surface-variant">
+        © 2024 VERÓNICA CARRASQUEL. TODOS LOS DERECHOS RESERVADOS.
+      </div>
+</div>
+</footer>
+<script>
+    // Theme Toggling Logic
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+
+    themeToggle.addEventListener('click', () => {
+      htmlElement.classList.toggle('dark');
+      
+      // Update icon based on theme
+      const icon = themeToggle.querySelector('.material-symbols-outlined');
+      if (htmlElement.classList.contains('dark')) {
+        icon.innerText = 'light_mode';
+      } else {
+        icon.innerText = 'contrast';
+      }
+    });
+
+    // Horizontal entrance animation for rows
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('opacity-100');
+            entry.target.classList.remove('opacity-0', 'translate-y-4');
+          }, index * 100);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.exhibition-row').forEach(row => {
+      row.classList.add('opacity-0', 'translate-y-4', 'transition-all', 'duration-700');
+      observer.observe(row);
+    });
+  </script>
+</body></html>

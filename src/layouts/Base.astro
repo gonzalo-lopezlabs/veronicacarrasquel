@@ -1,0 +1,157 @@
+---
+import '../styles/global.css';
+import SocialLinks from '../components/SocialLinks.astro';
+import type { Dict } from '../i18n/es';
+
+interface Props {
+  t: Dict;
+  title: string;
+  description: string;
+  altUrl: string;
+  active: 'work' | 'about' | 'exhibitions';
+}
+
+const { t, title, description, altUrl, active } = Astro.props;
+
+const navItems = [
+  { key: 'work', label: t.nav.work, href: t.routes.home },
+  { key: 'about', label: t.nav.about, href: t.routes.about },
+  { key: 'exhibitions', label: t.nav.exhibitions, href: t.routes.exhibitions },
+  { key: 'contact', label: t.nav.contact, href: `${t.routes.home}#contact` },
+];
+
+const activeClass =
+  'font-mono text-label-mono uppercase tracking-widest text-void-black dark:text-paper-white border-b-2 border-void-black dark:border-paper-white pb-1';
+const inactiveClass =
+  'font-mono text-label-mono uppercase tracking-widest text-secondary hover:text-void-black dark:text-silver dark:hover:text-paper-white transition-colors';
+---
+
+<!doctype html>
+<html lang={t.code}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" hreflang={t.code === 'es' ? 'en' : 'es'} href={altUrl} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline>
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+  </head>
+  <body
+    class="bg-paper-white text-void-black dark:bg-void-black dark:text-paper-white font-body text-body-md transition-colors duration-300"
+  >
+    <nav
+      class="fixed top-0 w-full z-50 bg-paper-white dark:bg-void-black border-b border-void-black dark:border-paper-white flex justify-between items-center px-margin-mobile lg:px-margin-desktop py-4 transition-colors duration-300"
+    >
+      <a
+        href={t.routes.home}
+        class="font-headline text-headline-md tracking-tighter font-bold uppercase"
+      >
+        VERÓNICA CARRASQUEL
+      </a>
+      <div class="hidden md:flex items-center gap-10">
+        {
+          navItems.map((item) => (
+            <a href={item.href} class={item.key === active ? activeClass : inactiveClass}>
+              {item.label}
+            </a>
+          ))
+        }
+      </div>
+      <div class="flex items-center gap-2">
+        <SocialLinks instagram={t.contact.instagram} whatsapp={t.contact.whatsapp} variant="header" />
+        <a
+          href={altUrl}
+          class="flex items-center gap-1 p-2 hover:opacity-70 transition-opacity"
+          aria-label={t.switchLabel}
+          title={t.switchLabel}
+        >
+          <span class="material-symbols-outlined" aria-hidden="true">language</span>
+          <span class="font-mono text-label-mono uppercase">{t.code === 'es' ? 'EN' : 'ES'}</span>
+        </a>
+        <button
+          id="theme-toggle"
+          class="p-2 cursor-pointer hover:opacity-70 active:scale-95 transition-all"
+          aria-label={t.themeLabel}
+          title={t.themeLabel}
+        >
+          <span class="material-symbols-outlined" aria-hidden="true">contrast</span>
+        </button>
+      </div>
+    </nav>
+
+    <main class="pt-32">
+      <slot />
+    </main>
+
+    <SocialLinks instagram={t.contact.instagram} whatsapp={t.contact.whatsapp} variant="floating" />
+
+    <footer
+      class="w-full border-t-2 border-void-black dark:border-paper-white flex flex-col md:flex-row justify-between items-center px-margin-mobile lg:px-margin-desktop py-16 gap-8"
+    >
+      <div class="flex flex-col items-center md:items-start gap-2">
+        <a href={t.routes.home} class="font-headline text-headline-md font-bold uppercase">
+          VERÓNICA CARRASQUEL
+        </a>
+        <p class="font-mono text-label-mono text-secondary dark:text-silver uppercase">
+          {t.footer.tagline}
+        </p>
+      </div>
+      <div class="flex gap-8">
+        {
+          t.footer.links.map((link) => (
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="font-mono text-label-mono uppercase text-secondary hover:text-void-black dark:text-silver dark:hover:text-paper-white transition-colors"
+            >
+              {link.label}
+            </a>
+          ))
+        }
+      </div>
+      <p class="font-mono text-label-mono uppercase text-secondary dark:text-silver text-center">
+        {t.footer.rights}
+      </p>
+    </footer>
+
+    <script>
+      const toggle = document.getElementById('theme-toggle');
+      toggle?.addEventListener('click', () => {
+        const isDark = document.documentElement.classList.toggle('dark');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      });
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              observer.unobserve(entry.target);
+            }
+          }
+        },
+        { threshold: 0.1 }
+      );
+
+      document
+        .querySelectorAll('.reveal-up, .line-growth')
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
