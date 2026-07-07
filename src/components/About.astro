@@ -9,20 +9,10 @@ const { t } = Astro.props;
 ---
 
 <!-- Hero -->
-<section class="px-margin-mobile lg:px-margin-desktop mb-32 md:mb-48">
-  <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
-    <div class="md:col-span-8">
-      <span class="font-mono text-label-mono uppercase tracking-[0.3em] mb-4 block reveal-up">
-        {t.about.heroLabel}
-      </span>
-      <h1 class="font-headline text-headline-xl uppercase reveal-up">{t.about.heroTitle}</h1>
-    </div>
-    <div class="md:col-span-4 hidden md:block">
-      <p class="font-mono text-label-mono uppercase border-t border-void-black dark:border-paper-white pt-4">
-        {t.about.profile}
-      </p>
-    </div>
-  </div>
+<section class="px-margin-mobile lg:px-margin-desktop mb-20 md:mb-32">
+  <h1 class="font-headline text-headline-xl font-bold uppercase reveal-up text-center">
+    {t.about.heroTitle}
+  </h1>
 </section>
 
 <!-- Bio -->
@@ -47,7 +37,7 @@ const { t } = Astro.props;
     <div class="md:col-span-5 md:col-start-8">
       <div class="space-y-16">
         <div class="reveal-up">
-          <h2 class="font-headline text-headline-lg mb-8 uppercase">{t.about.bioTitle}</h2>
+          <h2 class="font-headline text-headline-md mb-8 uppercase">{t.about.birthLine}</h2>
           {
             t.about.bioParagraphs.map((p, i) => (
               <p
